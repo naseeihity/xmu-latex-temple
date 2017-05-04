@@ -1,0 +1,54 @@
+%!TEX program = xelatex
+
+\documentclass{xmuthesis}
+\graphicspath{{figures/}}            % 图片文件路径
+\usepackage{setspace}                % 控制各种间距
+\usepackage{ragged2e}                % 主要提供justifying功能，两端对齐
+\usepackage{indentfirst}             % 小标题后的第一段默认缩进
+\usepackage{amsmath}
+\usepackage[super,square,comma]{natbib}    % 引用角标格式
+\usepackage{tabularx}                % 表格
+\usepackage{float}                   % 清除浮动
+\usepackage[section]{placeins}       % 清除浮动
+\begin{document}
+　%这里引入一个空白符作为第一页是为了使得复制 pdf 的文字不再乱码
+\pdfbookmark[0]{封面}{title}          % 封面页加到 pdf 书签
+\include{pages/cover}                % 加入封面
+
+\frontmatter                         % 开始正文之前的部分
+\pagenumbering{Roman}                % 正文之前的页码用大写罗马字母编号.
+
+%%%=== 致谢 ===%%%
+\include{pages/thanks}               % 致谢
+\include{pages/abstract}             % 摘要
+\pdfbookmark{目录}{toc}
+\tableofcontents
+
+\mainmatter                          % 以下是正文
+%%%=== 第一章 引言 ===%%%
+\include{pages/chapter1}
+
+%%%=== 第二章 背景 ===%%%
+\include{pages/chapter2}
+%%%=== 第三章 原理 ===%%%
+\include{pages/chapter3}
+
+%%%=== 第四章 实验 ===%%%
+\include{pages/chapter4}
+
+%%%=== 第五章 结果 ===%%%
+\include{pages/chapter5}
+
+%%%=== 第六章 总结===%%%
+\include{pages/chapter6}
+
+\backmatter
+
+%%%=== 参考文献 ===%%%
+\include{pages/references}
+
+%%%=== 附录 ===%%%
+\appendix
+
+\end{document}
+% 

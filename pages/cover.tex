@@ -1,0 +1,70 @@
+%%设置内容
+\title{题目}
+\entitle{ Title }
+\author{姓名}
+\StudentNumber{1234567}
+\SchoolName{信息科学与技术学院}
+%%\Department{通信工程系}
+\Major{通信工程}
+\Grade{201x级}
+\InnerAdviser{xxx}
+\TitleOfInnerAdviser{教授}
+
+
+\year{二〇1x}
+\month{y}
+\day{z}
+
+%%封面格式
+\thispagestyle{empty}
+	
+	\begin{center}
+		\vspace{25pt}
+		\includegraphics[height=1.8cm]{xmu.png}   
+	\end{center}
+	
+	\begin{spacing}{2.0}
+		{\centering{\songti \zihao{-2} \textbf{本\quad 科\quad  毕\quad  业\quad  论\quad  文(论文)}}\\}
+		{\centering{{\songti \zihao{-3}(通信工程)} \zihao{3}}\\[1em]}
+	\end{spacing}
+	
+    {\centering{\songti \zihao{2} \textbf{\the\title}}\\}
+    \vspace{10pt}
+    {\centering{\Roman \zihao{3} \textbf{\the\entitle}}\\}
+	\vspace{85pt}
+    % \vfill\vfill\vfill
+    {\songti\zihao{3}
+	 \begin{flushleft}
+       \hspace{4em}姓\hspace{2em}名： {\the\author}\\[0.5em]
+       \hspace{4em}学\hspace{2em}号： {\the\StudentNumber}\\[0.5em]
+       \hspace{4em}学\hspace{2em}院：{\the\SchoolName}\\[0.5em]
+       %\hspace{4em}\hspace{3em}系： {\the\Department}\\[0.5em]
+       \hspace{4em}专\hspace{2em}业： {\the\Major}\\[0.5em]
+	   \hspace{4em}年\hspace{2em}级： {\the\Grade}\\[0.5em]
+	   \hspace{4em}指导老师：\makebox[3em]{\the\InnerAdviser}\hspace{4.5em}职称：{\the\TitleOfInnerAdviser}\\[0.5em]
+	\end{flushleft}
+	\vspace{30pt}
+    {\centering{\the\year}年{\the\month}月{\the\day}日 \\}
+
+	}
+	\newpage
+	\thispagestyle{empty}
+	\begin{center}{\songti\zihao{4}\bfseries 厦门大学本科学位论文诚信承诺书}\end{center}
+	\par\vspace*{20pt}
+	\begin{flushleft}
+	\renewcommand{\baselinestretch}{2}
+	
+	{\justifying{\songti\zihao{4}%
+	\hspace{2em}本人呈交的学位论文是在导师指导下独立完成的研究成果。本人在论文写作中参考其他个人或集体已经发表的研究成果，均在文中以适当方式明确标明，并符合相关法律规范及《厦门大学本科毕业论文规范》。\par
+	另外，该学位论文为（\hspace{14em}）课题（组）的研究成果，获得（\hspace{7.5em}）课题（组）经费或实验室的资助，在（\hspace{7.5em}）实验室完成。（请在以上括号内填写课题或课题组负责人或实验室名称，未有此项声明内容的，可以不作特别声明。）\par
+	\begin{flushright}
+	\makebox[24em]{学生声明（签名）：\hspace{5em}}\\
+	\makebox[16em]{年\hspace{1.5em} 月\hspace{1.5em} 日\hspace{3em}}\\[2em]
+	\end{flushright}
+	\hspace{2em}该同学呈交的学位论文是在本人指导下独立完成的研究成果。本人已经对学生毕业论文内容进行严格审核，论文写作中参考其他个人或集体已经发表的研究成果，均在文中以适当方式明确标明，并符合相关法律规范及《厦门大学本科毕业论文规范》。\par
+	\begin{flushright}
+	\makebox[24em]{学生声明（签名）：\hspace{5em}}\\
+	\makebox[16em]{年\hspace{1.5em} 月\hspace{1.5em} 日\hspace{3em}}\\[2em]
+	\end{flushright}
+	}}
+	\end{flushleft}
