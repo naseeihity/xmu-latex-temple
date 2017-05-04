@@ -3,3 +3,5 @@
 *.fls
 *.out
 *.toc
+xmuTemple.synctex.gz
+*.log
